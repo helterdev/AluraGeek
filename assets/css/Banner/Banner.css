@@ -1,0 +1,102 @@
+.banner{
+    width: 100%;
+    height:192px;
+    position: absolute;
+    left: 0;
+}
+
+.banner__img{
+    height: 100%;
+    background-size: 100% 100%;
+    animation: banner 10s infinite linear alternate-reverse;
+    position: relative;
+    display: flex;
+    align-items:end;
+}
+
+.banner__capa{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.banner__info{
+    padding: 16px  16px;
+    z-index: 1;
+}
+
+.banner__info div{
+    padding-bottom: 8px;
+}
+
+.banner__info h1{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+}
+
+.banner__info p{
+    font-weight: 600;
+    font-size: 0.8em;
+    color: white;
+}
+
+.banner__boton{
+    padding: 12px 16px;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+@keyframes banner {
+    0%, 30%{
+        background-image: url(../../img/playstation.jpg);
+    }
+
+    35%, 75%{
+        background-image: url(../../img/xbox.jpg);
+    }
+
+    80%, 100%{
+        background-image: url(../../img/nintendo.jpg);
+    }
+
+}
+
+@media screen and (min-width: 768px){
+    .banner{
+        height: 352px;
+    }
+
+   .banner__img{
+    align-items: center;
+   }
+
+   .banner__info h1{
+        font-size: 3.5em;
+   }
+
+   .banner__info p{
+    font-size: 1.5em;
+   }
+
+   .banner__boton{
+    padding: 1.5em 2.5em;
+   }
+
+   .banner__info div{
+    padding-top: 0.5em;
+   }
+}
+
+@media  screen and (min-width: 1440px) {
+    .banner{
+        height: 70%;
+    }
+}

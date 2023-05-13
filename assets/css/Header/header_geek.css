@@ -5,8 +5,16 @@
     padding: 16px 0;
 }
 
-.menu__logo{
+.menu__contenedor{
     width: 35%;
+}
+
+.menu__contenedor a{
+    display: block;
+}
+
+.menu__logo{
+    width: 100%;
 }
 
 .menu__boton{
@@ -30,10 +38,11 @@
 }
 
 @media screen and (min-width: 768px){
-    .menu__logo{
-        max-width: max-content;
-    }
     
+    .menu__contenedor{
+        max-width: 172px;
+    }
+
     .menu__search{
         position: relative;
         width: 30%;

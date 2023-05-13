@@ -10,19 +10,43 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./assets/css/Header/header_geek.css">
+    <link rel="stylesheet" href="./assets/css/Banner/Banner.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="menu">
-            <img src="./assets/img/Logo.png" alt="logo alura geek" class="menu__logo">
+        <nav class="menu">
+            <div class="menu__contenedor">
+                <a href="./index.html">
+                    <img src="./assets/img/Logo.png" alt="logo alura geek" class="menu__logo">
+                </a>
+            </div>
             <div class="menu__search">
                 <input type="search" placeholder="¿Qué deseas buscar?" class="menu__boton__search" hidden>
                 <span class="menu__search__imagen"><i></i></span>
             </div>
             <button class="menu__boton" type="button">Login</button>
             <img src="./assets/img/Icone.png" alt="search" class="menu__search__icon">
-        </div>
+        </nav>
     </header>
+    <main>
+        <div class="banner">
+            <div class="banner__img">
+                <div class="banner__capa"></div>
+                <div class="banner__info">
+                    <div>
+                        <h1>Mayo Promocional</h1>
+                    </div>
+                    <div>
+                        <p>Productos seleccionados con el 33% de descuento</p>
+                    </div>
+                    <div>
+                        <button type="button" class="banner__boton">Ver Consolas</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
 </body>
 </html>
