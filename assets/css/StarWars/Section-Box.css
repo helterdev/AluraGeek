@@ -1,0 +1,57 @@
+.section__box{
+    padding: 1em 0;
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.box{
+    width: 156px;
+    height: 250px;
+    margin-bottom: 0.5em;
+}
+
+.box__contenido{
+    width: 100%;
+    height: 100%;
+}
+
+.lista__img{
+    width: 156px;
+    height: 174px;
+}
+
+.lista__imagen{
+    width: 100%;
+    height: 100%
+}
+
+.box__li{
+    padding-bottom: 0.5em;
+    color: #464646;
+}
+
+.lista__title{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.lista__precio{
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.lista__enlace a{
+    color: #2A7AE4;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 768px){
+    .box__visible{
+        display: none;
+    }
+}
