@@ -85,6 +85,10 @@
     align-items: center;
    }
 
+   .banner__info{
+    padding-left: 7%;
+}
+
    .banner__info h1{
         font-size: 3.5em;
    }
@@ -105,6 +109,10 @@
 @media  screen and (min-width: 1440px) {
     .section__banner{
         height: 70vh;
+    }
+    
+    .banner__info{
+        padding-left: 7%;
     }
 
     .banner{
