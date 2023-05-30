@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/ico.png">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/css/Header/header_geek.css">
+    <link rel="stylesheet" href="./assets/css/Productos/Productos.css">
+    <link rel="stylesheet" href="./assets/css/Contacto/Contacto.css">
+    <link rel="stylesheet" href="./assets/css/Rodapie/Rodapie.css">
+    <title>Menú Administrador</title>
+</head>
+<body>
+    <header>
+        <nav class="menu">
+            <div class="menu__contenedor">
+                <a href="./index.html">
+                    <img src="./assets/img/Logo.png" alt="logo alura geek" class="menu__logo">
+                </a>
+            </div>
+            <div class="menu__search">
+                <input type="search" placeholder="¿Qué deseas buscar?" class="menu__boton__search" hidden>
+                <span class="menu__search__imagen"><i></i></span>
+            </div>
+            
+            <img src="./assets/img/Icone.png" alt="search" class="menu__search__icon">
+        </nav>
+    </header>
+    <main>
+       <div>
+            <form class="box__productos">
+                <fieldset class="productos__form">
+                    <legend class="productos__title">Agregar nuevo producto:</legend>
+                    <div class="productos__input">
+                        <label for="imagen">URL de la imagen:</label>
+                        <input type="text" id="imagen" class="input" placeholder="">
+                    </div>
+                    <div class="productos__input">
+                        <label for="categorias">Categorias:</label>
+                        <input type="text" id="categorias" class="input" placeholder="">
+                    </div>
+                    <div class="productos__input">
+                        <label for="nameProducto">Nombre del Producto:</label>
+                        <input type="text" id="nameProducto" class="input" placeholder="">
+                    </div>
+                    <div class="productos__input">
+                        <label for="precioProducto">Precio del producto:</label>
+                        <input type="text" id="precioProducto" class="input" placeholder="">
+                    </div>
+                    <div class="productos__input textarea">
+                        <label for="descripcion">Descripcion del producto:</label>
+                        <textarea name="descripcion" id="descripcion" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="productos__boton">
+                        <button type="button">Agregar Producto</button>
+                    </div>
+                    
+                </fieldset>
+            </form>
+       </div> 
+       <div class="contacto">
+        <div class="contacto__referencia">
+            <div class="contacto__box">
+                    <img src="./assets/img/Contacto/Logo.png" alt="logo">
+            </div>
+            <div class="contacto__box">
+                    <ul class="contacto__info">
+                        <li>Quienes somos</li>
+                        <li>Politica de privacidad</li>
+                        <li>Programa de fidelidad</li>
+                        <li>Nuestras tiendas</li>
+                        <li>Quiero ser franquiciado</li>
+                        <li>Anuncielo aqui</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="contacto__box__formulario">
+            <form action="">
+                <fieldset class="contacto__form">
+                    <legend>Hable con nosotros</legend>
+                    <div class="contacto__input">
+                        
+                        <input type="text" id="name" class="input" placeholder=" ">
+                        <label for="name">Nombre</label>
+                    </div>
+                    
+                    <div class="contacto__text">
+                        <textarea name="text" id="mensaje" cols="30" rows="10" placeholder=" "></textarea>
+                        <label for="mensaje">Escribe tu mensaje</label>
+                    </div> 
+                    <div class="contacto__boton">
+                        <button type="submit">Enviar mensaje</button>
+                    </div>   
+                </fieldset>
+            </form>
+        <div/>
+</div> 
+</main>
+<footer class="rodapie">
+<h3>Desarrollado por Helter Vélez <br>2023</h3>
+</footer>
+    </main>
+</body>
+</html>
