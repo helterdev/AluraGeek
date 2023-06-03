@@ -34,13 +34,13 @@
             <div class="box__login">
                 <h3 class="login__title">Login</h3>
                 <form class="login__form">
-                    <div class="login__group">
+                    <div class="login__group" id="prueba">
                         <label for="email">Email</label>
-                        <input type="email" id="email" class="login__input">
+                        <input type="email" id="email" class="login__input" name="user.email" data-tipo="email">
                     </div>
                     <div class="login__group">
                         <label for="password">Password</label>
-                        <input type="password" id="password" class="login__input">
+                        <input type="password" id="password" class="login__input" name="user.password" data-tipo="password">
                     </div>
                     <div class="boton">
                         <button type="button" class="login__boton">Login</button>
@@ -84,11 +84,12 @@
                     </fieldset>
                 </form>
             <div/>
-    </div> 
-</main>
-<footer class="rodapie">
-    <h3>Desarrollado por Helter Vélez <br>2023</h3>
-</footer>
+        </div> 
     </main>
+    <footer class="rodapie">
+        <h3>Desarrollado por Helter Vélez <br>2023</h3>
+    </footer>
+    <script type="module" src="./Js/app.js"></script>
+    <!-- <script src="./controller/control-login.js"></script> -->
 </body>
 </html>
