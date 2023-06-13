@@ -3,8 +3,6 @@ export const validateInputs = (input) => {
     // console.log(typeInput);
     if(typeInputs[typeInput]){
         typeInputs[typeInput](input);
-    }else{
-
     }
     
 }

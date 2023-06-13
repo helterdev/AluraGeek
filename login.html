@@ -33,7 +33,7 @@
         <div class="box">
             <div class="box__login">
                 <h3 class="login__title">Login</h3>
-                <form class="login__form">
+                <form class="login__form" id="login">
                     <div class="login__group" id="group__mail">
                         <label for="email">Email</label>
                         <input type="email" id="email" class="login__input" name="email" data-tipo="email" placeholder="ejemplo@dominio.com" required>
@@ -72,12 +72,12 @@
                         <legend>Hable con nosotros</legend>
                         <div class="contacto__input">
                             
-                            <input type="text" name="name" id="nombre_" class="input input_" placeholder=" " maxlength="40" data-tipo="nombre">
+                            <input type="text" name="name" id="nombre_" class="input input_" placeholder=" " maxlength="40" data-tipo="nombre" required>
                             <label for="nombre_">Nombre</label>
                         </div>
                         
                         <div class="contacto__text">
-                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder=" " class="mensaje input_" maxlength="120" data-tipo="mensaje"></textarea>
+                            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder=" " class="mensaje input_" maxlength="120" data-tipo="mensaje" required></textarea>
                             <label for="mensaje">Escribe tu mensaje</label>
                         </div> 
                         <div class="contacto__boton">
@@ -92,6 +92,7 @@
         <h3>Desarrollado por Helter Vélez <br>2023</h3>
     </footer>
     <script type="module" src="./Js/app.js"></script>
+    <script type="module" src="./controller/login.js"></script>
     <!-- <script src="./controller/control-login.js"></script> -->
 </body>
 </html>
