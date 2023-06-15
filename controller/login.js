@@ -17,12 +17,17 @@ formLogin.addEventListener('submit', (e) => {
 const dataUsers = (data) => {
     const email = document.querySelector("#email").value;
     const password_ = document.querySelector("#password").value;
+    const span = document.querySelector(".mensaje");
     data.forEach(({user, password}) => {
         if(user === email && password === password_){
+            span.textContent = " "
             window.location.href = "/index.html";
+            
         }else{
-            console.log("usuario no resgistrado");
+            
+            span.textContent = "usuario no registrado"
         }
+        
     })
 
 }

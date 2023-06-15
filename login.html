@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/Login/Login.css">
     <link rel="stylesheet" href="./assets/css/Contacto/Contacto.css">
     <link rel="stylesheet" href="./assets/css/Rodapie/Rodapie.css">
+    <link rel="stylesheet" href="./assets/css/MessageError/Error.css">
     <title>Login</title>
 </head>
 <body>
@@ -34,20 +35,24 @@
             <div class="box__login">
                 <h3 class="login__title">Login</h3>
                 <form class="login__form" id="login">
-                    <div class="login__group" id="group__mail">
+                    <div class="login__group" id="loginEmail" >
                         <label for="email">Email</label>
                         <input type="email" id="email" class="login__input" name="email" data-tipo="email" placeholder="ejemplo@dominio.com" required>
-                        <span class="message" id="prueba"></span>
+                        <span class="message__error"></span>
                     </div>
                     <div class="login__group">
                         <label for="password">Password</label>
                         <input type="password" id="password" class="login__input" name="password" data-tipo="password" required>
-                        <span class="message" id="prueba_"></span>
+                        <span class="message__error"></span>
                     </div>
                     <div class="boton">
                         <button type="submit" class="login__boton">Login</button>
                     </div>
                 </form>
+                <div class="box__message">
+                    <span class="mensaje"></span>
+                </div>
+                
             </div>
         </div>
         <div class="contacto">
@@ -74,6 +79,7 @@
                             
                             <input type="text" name="name" id="nombre_" class="input input_" placeholder=" " maxlength="40" data-tipo="nombre" required>
                             <label for="nombre_">Nombre</label>
+                            <span class="message__error"></span>
                         </div>
                         
                         <div class="contacto__text">

@@ -1,0 +1,20 @@
+.message__error{
+    position: absolute;
+    left: 1px;
+    bottom: -0.5px;
+    font-size: 12px;
+    color: red;
+    font-weight: 400;
+}
+
+.valido{
+    border-color: greenyellow;
+}
+
+.notvalido{
+    border-color: red;
+}
+
+.valido_{
+    border: none;
+}
