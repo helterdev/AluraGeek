@@ -1,0 +1,67 @@
+@import "../responsive";
+.container{
+  background-color:#f4f1f2;
+  border-radius: 1em;
+  @include desktop{
+    display: flex;
+    justify-content: center;
+    .form__products{
+      width: 600px;
+    }
+  }
+}
+.form__products{
+  padding: 1em;
+
+  fieldset{
+    text-align: center;
+    button{
+      width: 100%;
+      padding: 16px;
+      color: white;
+      background-color: #2A7AE4;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  legend{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #464646;
+    margin-bottom: 1em;
+  }
+}
+
+
+.register__group{
+  position: relative;
+    .input{
+        width: 100%;
+        box-sizing: border-box;
+        height: 56px;
+        font-size: 1em;
+        font-weight: 400;
+        color: #464646;
+        padding: 10px 0 5px 5px;
+        outline: none;
+        margin-bottom: 1em;
+        border: none;
+        box-shadow: 3px 5px 0px 0px rgba(0, 0, 0, 0.08);
+    }
+    #description{
+      padding: 15px 0 5px 5px;
+      resize: none;
+    }
+
+    label{
+      font-size: 12px;
+      color: #888787;
+      position: absolute;
+      top: 4px;
+      left: 5px;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    
+}

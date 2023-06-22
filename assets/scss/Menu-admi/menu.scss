@@ -1,0 +1,11 @@
+@import "../responsive";
+$font-blue: #2A7AE4;
+
+.menu__admi{
+    text-decoration: none;
+    border: 1px solid $font-blue;
+    color: $font-blue;
+    padding: 16px;
+    font-size: 14px;
+    font-weight: 600;
+}
