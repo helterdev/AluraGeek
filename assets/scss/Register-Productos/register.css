@@ -18,7 +18,7 @@
 .form__products fieldset {
   text-align: center;
 }
-.form__products fieldset button {
+.form__products fieldset .btn {
   width: 100%;
   padding: 16px;
   color: white;
@@ -31,6 +31,32 @@
   font-weight: 700;
   color: #464646;
   margin-bottom: 1em;
+}
+
+.register__img {
+  display: flex;
+  margin-bottom: 1em;
+  justify-content: center;
+}
+.register__img .img__preview {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register__img .img__preview img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+.register__img .img__preview button {
+  padding: 16px;
+  background-color: #2A7AE4;
+  border-radius: 10px;
+  border: none;
+  color: #f4f1f2;
+  cursor: pointer;
 }
 
 .register__group {

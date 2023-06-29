@@ -15,7 +15,7 @@
 
   fieldset{
     text-align: center;
-    button{
+    .btn{
       width: 100%;
       padding: 16px;
       color: white;
@@ -33,6 +33,32 @@
   }
 }
 
+.register__img{
+  display: flex;
+  margin-bottom: 1em;
+  justify-content: center;
+  .img__preview{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{
+      width: 100%;
+      height: 100%;
+      opacity: 0.8;
+    }
+
+    button{
+      padding: 16px;
+      background-color: #2A7AE4;
+      border-radius: 10px;
+      border: none;
+      color: #f4f1f2;
+      cursor: pointer;
+    }
+  }
+}
 
 .register__group{
   position: relative;

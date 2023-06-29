@@ -37,9 +37,14 @@
                     <form class="form__products" id="products">
                         <fieldset>
                             <legend>Agregar nuevo producto</legend>
-                            <div class="register__group">
-                                <label for="imagen">Url de la imagen</label>
-                                <input type="url" name="imagen" id="imagen" class="input">
+                            <div class="register__img">
+                                <div class="img__preview drag">
+                                    <img src="../assets/img/img.png" alt="products" id="img">
+                                </div>
+                                <div class="img__preview">
+                                    <button type="button" id="boton__file"><label for="files">Search files</label></button>
+                                    <input type="file" accept="image/*" id="files" name="files" hidden>
+                                </div>
                             </div>
                             <div class="register__group">
                                 <label for="name">Categorías</label>
@@ -58,12 +63,14 @@
                                 <label for="description">Descripción del producto</label>
                                 <textarea name="description" id="description" class="input"></textarea>
                             </div>
-                            <button type="submit">Agregar Producto</button>
+                            
+                            <button type="submit" class="btn">Agregar Producto</button>
                         </fieldset>
                     </form>
                 </div>
             </div>
         </main>
     </header>
+    <script type="module" src="../controller/products.js"></script>
 </body>
 </html>
