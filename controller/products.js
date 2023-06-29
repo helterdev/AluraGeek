@@ -2,9 +2,6 @@ const files = document.querySelector("#files");
 const img = document.querySelector("#img");
 const inputFile = document.querySelector("#boton__file");
 
-inputFile.addEventListener('click', () => files.click())
-img.addEventListener('click', () => files.click());
-
 
 files.addEventListener('change', (e) => {
     const file = e.target.files;
