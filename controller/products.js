@@ -2,7 +2,6 @@ const files = document.querySelector("#files");
 const img = document.querySelector("#img");
 const inputFile = document.querySelector("#boton__file");
 
-
 files.addEventListener('change', (e) => {
     const file = e.target.files;
     fileProcessing(file)
@@ -22,6 +21,7 @@ const fileProcessing = (file) => {
 }
 
 const drop = document.querySelector(".drag");
+
 const dropEvents = () => {
     drop.addEventListener("dragover", (e) => {
         e.preventDefault();
@@ -51,5 +51,49 @@ const dropProcessing = (file) => {
 
     }else{
         alert("archivo no valido");
+    }
+}
+
+const inputsRegister = document.querySelectorAll(".input");
+inputsRegister.forEach((input) => {
+    input.addEventListener('blur', () => validateInput(input))
+})
+
+const validateInput = (input) => {
+    const value = input.value;
+    if(value !== 0 && value !== ''){
+        validateType(input)
+    }else{
+        // console.log("esta vacio");
+    }
+}
+
+const validateType = (input) => {
+    const inputType = input.name;
+    const value = input.value;
+    if(type[inputType]){
+        type[inputType](value)
+        
+    }
+}
+
+const type = {
+    "categoria": (value) => validateCategory(value),
+    "producto": (value) => validateName(value),
+}
+
+const validateCategory = (value) => {
+    if(value.length >= 20){
+        console.log("El campo no debe tener mas de 20 carácteres");
+    }else{
+
+    }
+}
+
+const validateName = (value) => {
+    if(value.length >= 20){
+        console.log("El campo no debe tener mas de 20 carácteres");
+    }else{
+
     }
 }
