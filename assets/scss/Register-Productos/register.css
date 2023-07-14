@@ -88,5 +88,10 @@
   left: 5px;
   font-family: "Montserrat", sans-serif;
 }
+.register__group span {
+  color: red;
+  font-size: 14px;
+  font-weight: 400;
+}
 
 /*# sourceMappingURL=register.css.map */

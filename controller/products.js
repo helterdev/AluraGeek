@@ -54,46 +54,79 @@ const dropProcessing = (file) => {
     }
 }
 
+
 const inputsRegister = document.querySelectorAll(".input");
 inputsRegister.forEach((input) => {
     input.addEventListener('blur', () => validateInput(input))
+    
 })
 
 const validateInput = (input) => {
-    const value = input.value;
-    if(value !== 0 && value !== ''){
+    let message = '';
+    const name = input.name;
+    if(!input.validity.valueMissing){
         validateType(input)
     }else{
-        // console.log("esta vacio");
+        message = `El campo ${name} no debe estar vacío`;
+        input.setCustomValidity(message);
+        input.reportValidity();
     }
+     
 }
 
 const validateType = (input) => {
     const inputType = input.name;
     const value = input.value;
     if(type[inputType]){
-        type[inputType](value)
+        type[inputType](value, input)
         
     }
 }
 
 const type = {
-    "categoria": (value) => validateCategory(value),
-    "producto": (value) => validateName(value),
+    "categoria": (value, input) => validateCategory(value, input),
+    "producto": (value, input) => validateName(value, input),
 }
 
-const validateCategory = (value) => {
-    if(value.length >= 20){
-        console.log("El campo no debe tener mas de 20 carácteres");
-    }else{
+ const element = () => {
+    const span = document.createElement("span")
+    return span
+ }
 
+const validateCategory = (value, input) => {
+    const parent = input.parentElement;
+    const span = element();
+    if(value.length >= 20){
+        span.innerText = 'No debe contener más de 20 carácteres'
+        parent.append(span)
+    }else{
+        parent.removeChild(parent.lastChild)
     }
 }
 
-const validateName = (value) => {
+const validateName = (value, input) => {
+    const parent = input.parentElement;
+    const span = element();
     if(value.length >= 20){
-        console.log("El campo no debe tener mas de 20 carácteres");
+        span.innerText = 'No debe contener más de 20 carácteres'
+        parent.append(span)
     }else{
-
+        parent.removeChild(parent.lastChild)
     }
 }
+const inputPrice = document.querySelector("#price");
+    inputPrice.addEventListener('keyup',(e) => {
+        const keyCode = e.keyCode;
+        if(keyCode != 8){
+            if(keyCode < 48 || keyCode > 57){
+                inputPrice.setCustomValidity(`${e.key} no es un número`)
+                inputPrice.reportValidity()
+                console.log("no es un numero");
+            }
+        }else{
+            inputPrice.setCustomValidity("")
+            inputPrice.reportValidity()
+        }
+    })
+
+

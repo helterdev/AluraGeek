@@ -48,20 +48,20 @@
                             </div>
                             <div class="register__group">
                                 <label for="name">Categorías</label>
-                                <input type="text" name="categoria" id="name" class="input">
+                                <input type="text" name="categoria" id="name" class="input" required>
                             </div>
                             <div class="register__group">
                                 <label for="product">Nombre del producto</label>
-                                <input type="text" name="producto" id="product" class="input" maxlength="20">
+                                <input type="text" name="producto" id="product" class="input"  required>
                             </div>
                             <div class="register__group">
                                 <label for="price">Precio del producto</label>
-                                <input type="number" name="precio" id="price" class="input">
+                                <input type="number" name="price" id="price" class="input" pattern="[0-9]+" required>
                             </div>
 
                             <div class="register__group">
                                 <label for="description">Descripción del producto</label>
-                                <textarea name="description" id="description" class="input"></textarea>
+                                <textarea name="description" id="description" class="input" maxlength="150" required></textarea>
                             </div>
                             
                             <button type="submit" class="btn">Agregar Producto</button>
