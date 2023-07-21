@@ -48,23 +48,23 @@
                             </div>
                             <div class="register__group">
                                 <label for="name">Categorías</label>
-                                <input type="text" name="categoria" id="name" class="input" required>
+                                <input type="text" name="categoria" id="name" class="input" >
                             </div>
                             <div class="register__group">
                                 <label for="product">Nombre del producto</label>
-                                <input type="text" name="producto" id="product" class="input"  required>
+                                <input type="text" name="producto" id="product" class="input"  >
                             </div>
                             <div class="register__group">
                                 <label for="price">Precio del producto</label>
-                                <input type="number" name="price" id="price" class="input" pattern="[0-9]+" required>
+                                <input type="number" name="price" id="price" class="input" pattern="[0-9]+" >
                             </div>
 
                             <div class="register__group">
                                 <label for="description">Descripción del producto</label>
-                                <textarea name="description" id="description" class="input" maxlength="150" required></textarea>
+                                <textarea name="description" id="description" class="input" maxlength="150" ></textarea>
                             </div>
                             
-                            <button type="submit" class="btn">Agregar Producto</button>
+                            <button type="submit" class="btn" id="button">Agregar Producto</button>
                         </fieldset>
                     </form>
                 </div>
@@ -72,5 +72,6 @@
         </main>
     </header>
     <script type="module" src="../controller/products.js"></script>
+    <script type="module" src="../controller/sendProducts.js"></script>
 </body>
 </html>
