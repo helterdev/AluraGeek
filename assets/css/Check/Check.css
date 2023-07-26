@@ -1,0 +1,21 @@
+.box--check{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.box--check h1{
+    font-size: 50px;
+    font-weight: 400;
+    color: #2A7AE4;
+}
+
+.box--check img{
+    width: 100px;
+    height: 100px;
+    background-color: #2A7AE4;
+    border-radius: 50%;
+}
